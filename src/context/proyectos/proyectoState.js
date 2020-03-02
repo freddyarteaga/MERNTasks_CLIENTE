@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useReducer } from 'react';
 import proyectoContext from './proyectoContext'
 import proyectoReducer from './proyectoReducer'
 
