@@ -1,5 +1,6 @@
 import { 
-    TAREAS_PROYECTO 
+    TAREAS_PROYECTO,
+    AGREGAR_TAREA 
 } from '../../types/index'
 
 
@@ -10,6 +11,11 @@ export default (state, action) => {
                 ...state,
                 tareasproyecto: state.tareas.filter(tarea => tarea.proyectoId ===
                 action.payload)
+            }
+        case AGREGAR_TAREA:
+            return {
+                ...state,
+                tareas: [...state.tareas, action.payload]
             }
         default:
             return state
