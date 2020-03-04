@@ -5,12 +5,8 @@ import proyectoContext from '../../context/proyectos/proyectoContext'
 
 const ListadoTareas = () => {
 
-    const tareasProyecto = [
-        { nombre: 'Elegir Plataforma', estado: true },
-        { nombre: 'Elegir Colores', estado: false },
-        { nombre: 'Elegir Plataformas de Pago', estado: true },
-        { nombre: 'Elegir Hosting', estado: false },
-    ]
+    const tareasProyecto = []
+
 
     // Elimina un proyecto
     const onClickEliminar = () => {
