@@ -43,7 +43,7 @@ const ListadoTareas = () => {
 
             <button
                 type='button'
-                className='btn btn-eliminar'
+                className='btn btn-secundario sombra'
                 onClick={onClickEliminar}
             >Eliminar Proyecto &times;</button>
         </Fragment>
