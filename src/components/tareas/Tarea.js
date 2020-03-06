@@ -34,7 +34,7 @@ const Tarea = ({tarea}) => {
     }
 
     // agrega una tarea actual cuando el usuario desea editarla
-    const guardarTareaActual = tarea => {
+    const seleccionarTarea = tarea => {
         guardarTareaActual(tarea)
     }
 
