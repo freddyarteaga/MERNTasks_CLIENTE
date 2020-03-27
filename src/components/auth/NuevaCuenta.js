@@ -60,7 +60,7 @@ const NuevaCuenta = () => {
         // pasarlo al action
         registrarUsuario({
             nombre, 
-            mail,
+            email,
             password
         })
     }
