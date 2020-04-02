@@ -8,7 +8,7 @@ const Tarea = ({tarea}) => {
 
     // obtener la funcion del context de tarea
     const tareasContext = useContext(tareaContext)
-    const {eliminarTarea, obtenerTareas, cambiarEstadoTarea, guardarTareaActual} = tareasContext
+    const {eliminarTarea, obtenerTareas, actualizarTarea, guardarTareaActual} = tareasContext
 
     // extraer si un prpoyecto estas activo
     const proyectosContext = useContext(proyectoContext)
@@ -30,7 +30,7 @@ const Tarea = ({tarea}) => {
         }else {
             tarea.estado = true
         }
-        cambiarEstadoTarea(tarea)
+        actualizarTarea(tarea)
     }
 
     // agrega una tarea actual cuando el usuario desea editarla
