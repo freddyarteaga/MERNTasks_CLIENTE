@@ -103,7 +103,7 @@ import {
      }
 
      // Cierra la sesion del usuario
-     const cerraSesion = () => {
+     const cerrarSesion = () => {
          dispatch({
              type: CERRAR_SESION
          })
@@ -121,7 +121,7 @@ import {
                 registrarUsuario,
                 iniciarSesion,
                 usuarioAutenticado,
-                cerraSesion
+                cerrarSesion
             }}
         > { props.children }
 
